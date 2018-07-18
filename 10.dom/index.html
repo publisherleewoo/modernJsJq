@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://underscorejs.org/underscore.js"></script>
+    <script>
+    window.onload=function(){
+            var header = document.createElement('h1')
+            var textNode = document.createTextNode('hello world...!');
+            header.appendChild(textNode);
+            //header.innerHTML = 'hello world...!'
+
+            var image = document.createElement('img');
+            var attrNode = document.createAttribute('src');
+            attrNode.value=('http://placehold.it/300x300')
+            image.setAttributeNode(attrNode)
+            //1. image.setAttribute('src','http://placehold.it/300x300')
+            //2. image.src='http://placehold.it/300x300'
+            
+            document.body.appendChild(header);
+            document.body.appendChild(image);
+    }
+    </script>
+</head>
+<body>
+</body>
+</html> 

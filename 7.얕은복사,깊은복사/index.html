@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 깊은 복사 */
+        var originalArray = [1,2,3,4];
+        var newArray = [];
+        for(var i = 0; i < originalArray.length;i++){
+            newArray[i] = originalArray[i]
+        }
+
+        originalArray[0] = 373;
+
+        alert(originalArray)
+        alert(newArray)
+    </script>
+</body>
+</html> 
