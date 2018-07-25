@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <script>
+  <nav id="tabs">
+    <ul role="tablist">
+      <li>
+        <a id="tab1" href="#tabs-1" role="tab" aria-controls="tabs-1">menu</a>
+      </li>
+      <li>
+        <a id="tab2" href="#tabs-2" role="tab" aria-controls="tabs-2">menu2</a>
+      </li>
+      <li>
+        <a id="tab3" href="#tabs-3" role="tab" aria-controls="tabs-3">menu3</a>
+      </li>
+    </ul>
+    <div id="tabs-1" role="tabpanel" aria-labelledby="tab1">
+      <a href="#">depthMenu</a>
+      <a href="#">depthMenu</a>
+      <a href="#">depthMenu</a>
+    </div>
+    <div id="tabs-2" role="tabpanel" aria-labelledby="tab2">
+      <a href="#">depthMenu2</a>
+      <a href="#">depthMenu3</a>
+      <a href="#">depthMenu4</a>
+    </div>
+    <div id="tabs-3" role="tabpanel" aria-labelledby="tab3">
+      <a href="#">depthMenu5</a>
+      <a href="#">depthMenu6</a>
+      <a href="#">depthMenu7</a>
+    </div>
+  </nav>
+  <script>
     $.ajax({
-        url:'data.html',
-        success:function(data,textStatus){
-            $("body").html(data)
-        }
+      url: 'data.html',
+      success: function (data, textStatus) {
+        $("body").html(data)
+      }
     })    
-    </script>
+  </script>
 </body>
+
 </html>
